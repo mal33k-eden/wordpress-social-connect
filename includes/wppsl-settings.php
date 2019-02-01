@@ -70,12 +70,21 @@ function wppsl_options_content(){
                  </tr>
                  <tr>
                      <th scope="row">
+                         <label for="wppsl_settings[linkedin_url]"><?php _e('LinkedIn Url', 'wppsl_domain');?></label>
+                     </th>
+                     <td><input type="text" name="wppsl_settings[linkedin_url]" id="wppsl_settings[linkedin_url]" value="<?php echo $wppsl_options['linkedin_url']?>" class="regular-text">
+                         <p class="description"><?php _e('Enter your linkedin profile URL', 'wppsl_domain')?></p>
+                     </td>
+                 </tr>
+                 <tr>
+                     <th scope="row">
                          <label for="wppsl_settings[link_color]"><?php _e('Link Color', 'wppsl_domain');?></label>
                      </th>
                      <td><input type="text" name="wppsl_settings[link_color]" id="wppsl_settings[link_color]" value="<?php echo $wppsl_options['link_color']?>" class="regular-text">
                          <p class="description"><?php _e('Enter your color or a HEX', 'wppsl_domain')?></p>
                      </td>
                  </tr>
+
                  <tr>
                      <th scope="row">
                          <label for="wppsl_settings[show_in_feed]"><?php _e('Show In Post Feed', 'wppsl_domain');?></label>
